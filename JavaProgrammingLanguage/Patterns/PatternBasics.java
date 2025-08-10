@@ -1,3 +1,4 @@
+package Patterns;
 public class PatternBasics {
     public static void main(String[] args) {
         // Print a pattern of stars
