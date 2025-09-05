@@ -5,7 +5,8 @@ public class BinarySearch {
         int start = 0, end = numbers.length-1;
 
         while (start <= end) {
-            int mid = (start + end) / 2;
+            // int mid = (start + end) / 2;
+            int mid = start + (end - start) / 2; //To avoid integer overflow
 
             //comparisions
             if(numbers[mid] == key) {
@@ -13,6 +14,7 @@ public class BinarySearch {
             }
             if (numbers[mid] < key) { //right side
                 start = mid + 1;
+
             } else {  //left side
                 end = mid - 1;
             }
